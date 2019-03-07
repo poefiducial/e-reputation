@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7db8e23b-3276-4434-a7bf-e6f72d228467" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/e-reputation/e-reputation_client/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-reputation/e-reputation_client/public/iconefiducial.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-reputation/e-reputation_client/src/assets/FiducialOffSolu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-reputation/e-reputation_client/src/assets/facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-reputation/e-reputation_client/src/assets/fiducial2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-reputation/e-reputation_client/src/assets/fiducial3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-reputation/e-reputation_client/src/assets/fiducial4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-reputation/e-reputation_client/src/assets/iconefiducial.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-reputation/e-reputation_client/src/assets/instagram.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-reputation/e-reputation_client/src/assets/twitter.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-reputation/e-reputation_client/src/assets/veoprint.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-reputation/e-reputation_client/src/components/Connexion.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-reputation/e-reputation_client/src/components/Gauche.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-reputation/e-reputation_client/src/components/Header.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-reputation/e-reputation_client/src/components/Inscription.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-reputation/e-reputation_client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/e-reputation/e-reputation_client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-reputation/e-reputation_client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/e-reputation/e-reputation_client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-reputation/e-reputation_client/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-reputation/e-reputation_client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/e-reputation/e-reputation_client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-reputation/e-reputation_client/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/e-reputation/e-reputation_client/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-reputation/e-reputation_client/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-reputation/e-reputation_client/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-reputation/e-reputation_client/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-reputation/e-reputation_client/src/main.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.4520202">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/public/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="289">
+                  <caret line="17" selection-start-line="17" selection-end-line="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/src/components/Gauche.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="510">
+                  <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/src/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="34">
+                  <caret line="2" selection-start-line="2" selection-end-line="2" />
+                  <folding>
+                    <element signature="e#115#156#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/src/components/Inscription.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="153">
+                  <caret line="27" selection-start-line="27" selection-end-line="27" />
+                  <folding>
+                    <element signature="e#1243#1276#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/src/App.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="316">
+                  <caret line="28" selection-start-line="28" selection-end-line="29" />
+                  <folding>
+                    <element signature="e#99#153#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/src/components/Connexion.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="595">
+                  <caret line="38" selection-start-line="38" selection-end-line="38" />
+                  <folding>
+                    <element signature="e#1130#1163#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/src/components/Header.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="272">
+                  <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/e-reputation/e-reputation_client/src/components/HelloWorld.vue" />
+        <option value="$PROJECT_DIR$/e-reputation/e-reputation_client/package.json" />
+        <option value="$PROJECT_DIR$/e-reputation/e-reputation_client/postcss.config.js" />
+        <option value="$PROJECT_DIR$/e-reputation/e-reputation_client/public/index.html" />
+        <option value="$PROJECT_DIR$/e-reputation/e-reputation_client/src/components/FormInscription.vue" />
+        <option value="$PROJECT_DIR$/e-reputation/e-reputation_client/src/main.js" />
+        <option value="$PROJECT_DIR$/e-reputation/e-reputation_client/src/App.vue" />
+        <option value="$PROJECT_DIR$/e-reputation/e-reputation_client/src/components/VueGauche.vue" />
+        <option value="$PROJECT_DIR$/e-reputation/e-reputation_client/src/components/Connexion.vue" />
+        <option value="$PROJECT_DIR$/e-reputation/e-reputation_client/src/components/Header.vue" />
+        <option value="$PROJECT_DIR$/e-reputation/e-reputation_client/src/components/Gauche.vue" />
+        <option value="$PROJECT_DIR$/e-reputation/e-reputation_client/src/components/Inscription.vue" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mspr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mspr" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mspr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mspr" type="462c0819:PsiDirectoryNode" />
+              <item name="e-reputation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mspr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mspr" type="462c0819:PsiDirectoryNode" />
+              <item name="e-reputation" type="462c0819:PsiDirectoryNode" />
+              <item name="e-reputation_client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mspr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mspr" type="462c0819:PsiDirectoryNode" />
+              <item name="e-reputation" type="462c0819:PsiDirectoryNode" />
+              <item name="e-reputation_client" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mspr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mspr" type="462c0819:PsiDirectoryNode" />
+              <item name="e-reputation" type="462c0819:PsiDirectoryNode" />
+              <item name="e-reputation_client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mspr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mspr" type="462c0819:PsiDirectoryNode" />
+              <item name="e-reputation" type="462c0819:PsiDirectoryNode" />
+              <item name="e-reputation_client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mspr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mspr" type="462c0819:PsiDirectoryNode" />
+              <item name="e-reputation" type="462c0819:PsiDirectoryNode" />
+              <item name="e-reputation_client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Test" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Antony Morais\mspr\e-reputation\e-reputation_client\public" />
+      <recent name="C:\Users\Antony Morais\mspr\e-reputation\e-reputation_client\src\assets" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7db8e23b-3276-4434-a7bf-e6f72d228467" name="Default Changelist" comment="" />
+      <created>1551776209878</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551776209878</updated>
+      <workItem from="1551776211136" duration="12148000" />
+      <workItem from="1551792617542" duration="251000" />
+      <workItem from="1551793265416" duration="213000" />
+      <workItem from="1551793613177" duration="18243000" />
+      <workItem from="1551867189309" duration="14540000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="45395000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22844176" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.12602292" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../Test/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/node_modules/form-data/lib/browser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/node_modules/form-data/lib/populate.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/public/favicon.ico" />
+    <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/node_modules/form-data/lib/form_data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1734" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/node_modules/vue/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/src/assets/logo.png" />
+    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap-vue/nuxt/index.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap-vue/src/components/form/form.js" />
+    <entry file="file://$PROJECT_DIR$/package-lock.json" />
+    <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/postcss.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/src/components/FormInscription.vue" />
+    <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#115#156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="28" selection-start-line="28" selection-end-line="29" />
+          <folding>
+            <element signature="e#99#153#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/src/components/Connexion.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#1130#1163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/src/components/Header.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/src/components/Gauche.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-reputation/e-reputation_client/src/components/Inscription.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#1243#1276#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
