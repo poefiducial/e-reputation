@@ -6,11 +6,11 @@
                     <p>Vos portails</p>
                 </div>
                 <!--<div id="btn_container">-->
-                    <button class="home_button" type="button">Home</button><br>
-                    <button class="social_network_button" type="button">Réseaux sociaux</button><br>
-                    <button class="e_commerce_button" type="button">E-Commerce</button><br>
-                    <button class="dashboard_button" type="button">Dashboard</button><br>
-                    <button class="settings_button" type="button">Configurations</button>
+                <button class="home_button" type="button">Home</button><br>
+                <button class="social_network_button" type="button">Réseaux sociaux</button><br>
+                <button class="e_commerce_button" type="button">E-Commerce</button><br>
+                <button class="dashboard_button" type="button">Dashboard</button><br>
+                <button class="settings_button" type="button">Configurations</button>
                 <!--</div>-->
                 <img class="fidulogo" src="../assets/fiducial2_reduced.png">
             </div>
@@ -20,9 +20,15 @@
 </template>
 
 <script>
+   // var height =window.innerHeight;
     export default {
-        name: "MenuNav"
+        name: "MenuNav",
+
+     //   data: {
+     //       hauteur: height
+     //   }
     }
+
 </script>
 
 <style scoped>

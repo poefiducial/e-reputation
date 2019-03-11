@@ -11,5 +11,11 @@ Vue.config.productionTip = false
 
 
 new Vue({
+  data : {
+  /*  nom:'',
+    prenom:'',
+    email:'',
+    password:''
+ */ },
   render: h => h(App),
 }).$mount('#app')
