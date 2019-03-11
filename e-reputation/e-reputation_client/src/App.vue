@@ -4,6 +4,7 @@
     <!--<MenuNav titre="MenuNav"/>-->
     <Veoprint titre="Veoprint"/>
     <Twitter titre="Twitter"/>
+    <p>{{messageSymfony}}</p>
   </div>
 
 </template>
@@ -19,6 +20,11 @@
 
   export default {
     name: 'app',
+     data(){
+            return{
+                messageSymfony:"probleme : serveur symfony non joignable"
+            }
+        },
     components: {
       MenuNav,
       Connexion,
@@ -27,8 +33,16 @@
       VueGauche,
       Veoprint,
       Twitter,
+    },
+    mounted() {
+            this.$http.get('http://127.0.0.1:8000/essai')
+                .then((response)=>{
+                    this.messageSymfony=response.body;
+                })
     }
+
   }
+  
 </script>
 
 <style>
@@ -40,4 +54,5 @@
     color: #43425D;
     margin-top: 10px;
   }
+
 </style>

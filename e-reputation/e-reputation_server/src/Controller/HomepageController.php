@@ -16,17 +16,31 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+
+
 class HomepageController extends AbstractController
 {
     /**
-     * @Route("/user", methods={"POST"})
+     * @Route("/essai", methods={"GET"})
      */
+    public function envoie(Request $req) {
+        $content = $req->getContent();
+
+
+        $output =  "Message de Symfony : ok";
+
+        return new Response($output);
+    }
+
+    /**
+ * @Route("/user", methods={"POST"})
+ */
     public function createUser(Request $req) {
         $content = $req->getContent();
         $data = json_decode($content);
 
         $entityManager = $this->getDoctrine()->getManager();
-        
+
         $user = new User();
         $user->setUseremail($data->email);
         $user->setUserlastname($data->lastname);
@@ -48,7 +62,7 @@ class HomepageController extends AbstractController
         $userRepository = $this->getDoctrine()->getRepository(user::class);
 
         $user = $userRepository->findOneBy([
-            "email" => $data->email,
+            "login" => $data->login,
             "password" => $data->password
         ]);
 
