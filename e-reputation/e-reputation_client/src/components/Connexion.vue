@@ -37,12 +37,14 @@
     import Header from './Header.vue'
     import Gauche from './Gauche'
 
+
     export default {
         name: 'Connexion',
         components: {Header,
                      Gauche}
     }
 </script>
+
 
 <style scoped>
 
