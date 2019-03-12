@@ -1,52 +1,60 @@
 <template>
   <div id="app">
+    <router-view></router-view>
     <!--<Connexion titre="Connexion"/>-->
     <!--<MenuNav titre="MenuNav"/>-->
-    <!--<Veoprint titre="Veoprint"/>
-    <Twitter titre="Twitter"/>-->
-    <p>{{messageSymfony}}</p>
-    <inscription></inscription>
+    <!--<Veoprint titre="Veoprint"/>-->
+    <!--<Twitter titre="Twitter"/>-->
+    <!--<p>{{messageSymfony}}</p>-->
+    <!--<inscription></inscription>-->
   </div>
 
 </template>
 
 <script>
   import Inscription from './components/Inscription.vue'
- /* import Header from './components/Header.vue'
+  import Header from './components/Header.vue'
   import VueGauche from './components/Gauche'
   import Connexion from "./components/Connexion";
-  import MenuNav from "./components/MenuNav";
+  import Home from './components/Home'
+  //import SideBar from './components/SideBar'
+  //import MenuNav from "./components/MenuNav";
   import Veoprint from "./components/Veoprint";
   import Twitter from"./components/Twitter"
-  */
+  import NavBarBoot from "./components/NavBarBoot";
+
 
   export default {
     name: 'app',
-     data(){
+    data(){
 
-            return{
-                messageSymfony:"probleme : serveur symfony non joignable"
-            }
-        },
+      return{
+        //    messageSymfony:"probleme : serveur symfony non joignable"
+      }
+    },
     components: {
-     // MenuNav,
-     // Connexion,
+      //MenuNav,
+      Connexion,
       Inscription,
-     // Header,
-     // VueGauche,
-     // Veoprint,
-     // Twitter,
+      Header,
+      VueGauche,
+      Home,
+      //SideBar,
+      Veoprint,
+      Twitter,
+      NavBarBoot
     },
     mounted() {
-  //          this.$http.get('http://127.0.0.1:8000/essai')
-  //              .then((response)=>{
-  //                  this.messageSymfony=response.body;
+      //  this.$http.get('http://127.0.0.1:8001/essai')
+      //      .then((response)=>{
+      //          this.messageSymfony=response.body;
 
-  //              })
+      //     })
     }
 
+
   }
-  
+
 </script>
 
 <style>

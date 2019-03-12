@@ -2,7 +2,7 @@
 
         <div>
             <b-nav>
-                <img src="../assets/fiducial3.png">
+                <router-link to="/Home" class=""><img src="../assets/fiducial3.png"></router-link>
                 <h2>Portail E-reputation by Fiducial</h2>
             </b-nav>
         </div>

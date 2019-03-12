@@ -5,7 +5,9 @@
 
         <b-row>
             <b-col id="nav_container">
-                <MenuNav></MenuNav>
+                <!--<MenuNav></MenuNav>-->
+                <NavBarBoot></NavBarBoot>
+<!--                <SideBar></SideBar>-->
             </b-col>
 
             <b-col id="main_page">
@@ -32,13 +34,16 @@
 
 <script>
     import Header from './Header'
-    import MenuNav from './MenuNav'
-
+    //import MenuNav from './MenuNav'
+    import NavBarBoot from "./NavBarBoot";
+    //import SideBar from './SideBar'
     export default {
         name: "Veoprint",
         components: {
+            NavBarBoot,
             Header,
-            MenuNav
+           // SideBar
+           //MenuNav
         }
     }
 </script>
