@@ -5,7 +5,8 @@
 
         <b-row>
             <b-col id="nav_container">
-                <MenuNav></MenuNav>
+               <!-- <MenuNav></MenuNav>-->
+                <NavBarBoot></NavBarBoot>
             </b-col>
             <b-col id="main_page">
                 <h2>Twitter</h2>
@@ -39,13 +40,15 @@
 
 <script>
     import Header from './Header'
-    import MenuNav from './MenuNav'
+    //import MenuNav from './MenuNav'
+    import NavBarBoot from "./NavBarBoot";
 
     export default {
         name: "Twitter",
         components: {
+            NavBarBoot,
             Header,
-            MenuNav
+            //MenuNav
         }
     }
 </script>
@@ -61,9 +64,10 @@
         margin-left: 0px;
     }
     #nav_container{
-        max-width: 17%;
+        max-width: 20vw;
     }
     #components_container{
+        min-width: 60vw;
         border:solid;
         border-width: 1px;
 
@@ -81,7 +85,7 @@
     }
 
     .api_container{
-        height: px;
+        height: 0px;
     }
 
 </style>
