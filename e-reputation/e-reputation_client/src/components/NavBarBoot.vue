@@ -20,7 +20,7 @@
     export default {
         name: "NavBarBoot"
     }
-    var hauteur = window.innerHeight;
+    //var hauteur = window.innerHeight;
 </script>
 
 <style scoped>
@@ -42,7 +42,7 @@
     }
 
     #nav_container{
-        width: 20%;
+
         border: solid;
         border-width: 1px;
         background: linear-gradient(#E1DEDE, #6B6B6B);
