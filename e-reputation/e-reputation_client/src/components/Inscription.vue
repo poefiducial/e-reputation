@@ -8,7 +8,8 @@
                 <Gauche></Gauche>
             </b-col>
             <b-col>
-                <form method="POST">
+                <form >
+                    <b-container fluid>
                     <div class="form-group row">
                         <label for="nom" class="col-sm-2 col-form-label">Nom</label>
                         <div class="col-sm-10">
@@ -22,12 +23,6 @@
                         </div>
                     </div>
 
-                    <div class="form-group row">
-                        <label for="login" class="col-sm-2 col-form-label">Login</label>
-                        <div class="col-sm-10">
-                            <input type="text" v-model= "login" class="form-control-plaintext" id="login" placeholder="Login">
-                        </div>
-                    </div>
                     <div class="form-group row">
                         <label for="email" class="col-sm-2 col-form-label">e mail</label>
                         <div class="col-sm-10">
@@ -48,8 +43,12 @@
                             <input type="password" v-model=" confirm " class="form-control-plaintext" id="confirm" placeholder="">
                         </div>
                     </div>
+                        <b-button v-on:click ="envoieInput" href="/connexion/">Enregistrer</b-button>
+                        <router-link to="/connexion" class="">Connexion</router-link>
 
-                    <button type="submit" @click ="envoieInput" class="btn btn-primary">Se connecter{{test}}</button>
+                  <!--  <input type="button" v-on:click ="envoieInput" class="btn btn-primary" value="Se connecter"/>
+                    {{messageSymfony}}-->
+                    </b-container>
                 </form>
             </b-col>
         </b-row>
@@ -61,33 +60,37 @@
 
     import Header from './Header.vue'
     import Gauche from './Gauche';
+    //import response from "vue-resource/src/http/response";
 
 
     export default {
         name: 'Inscription',
 
         components: {Header,
-                     Gauche
-                     },
+            Gauche
+        },
 
         props: {
-            titre: String,
-            type2: String
+
 
         },
         methods: {
             envoieInput: function () {
-               this.test="appel fonction envoieInput ";
-             //   var nom1= this.nom;
-             //   var prenom1= this.prenom;
-             //   var email1= this.email;
-             //   var password1= this.password;
-            //    var userJson = JSON.parse({"lastname":nom1,"firstname":prenom1,"email":email1,"password":password1})
-                this.$http.get('http://127.0.0.1:8000/essai')
-                   .then((response)=>{
-                        this.messageSymfony=response.body;
-
-                })
+                var nom1= this.nom;
+                var prenom1= this.prenom;
+                var email1= this.email;
+                var password1= this.password;
+                var userJson = JSON.stringify({lastname:nom1,firstname:prenom1,email:email1,password:password1})
+                //   this.messageSymfony = (userJson);
+                this.$http.get('http://127.0.0.1:8001/essai')
+               // this.$http.jsonp('http://127.0.0.1:8001/user',userJson,{
+                    //headers: {
+                       // 'Content-Type': 'application/javascript'
+                  //  }
+                //})
+                    .then(
+                       // console.log(response)
+                        )
                 return
             }
         },
@@ -98,15 +101,9 @@
                 prenom:'',
                 email:'',
                 password:'',
-                types: [
-                    'Nom',
-                    'Prénom',
-                    'Login',
-                    'email',
-                    'confirmez l\'email',
-                    'Mot de passe'
+                confirm:'',
+                messageSymfony:''
 
-                ]
             }
         }
 

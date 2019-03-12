@@ -12,6 +12,7 @@ namespace App\Controller;
 use App\Entity\User;
 use Psr\Container\ContainerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -38,18 +39,24 @@ class HomepageController extends AbstractController
     public function createUser(Request $req) {
         $content = $req->getContent();
         $data = json_decode($content);
-
+        var_dump($data);
         $entityManager = $this->getDoctrine()->getManager();
 
         $user = new User();
-        $user->setUseremail($data->email);
+
         $user->setUserlastname($data->lastname);
         $user->setUserfirstname($data->firstname);
+        $user->setUseremail($data->email);
         $user->setUserpassword($data->password);
+
         $entityManager->persist($user);
         $entityManager->flush();
+        if ($user === null) {
+            return new Response("null");
+        } else {
+            return new JsonResponse(json_encode($user->getIduser()));
+        }
 
-        return new Response($user->getIduser());
     }
 
     /**
