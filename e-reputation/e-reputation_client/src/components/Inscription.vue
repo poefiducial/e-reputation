@@ -42,8 +42,9 @@
                         </div>
                         <b-button v-on:click ="envoieInput" >Enregistrer</b-button>
                         <router-link to="/connexion" class="">Connexion</router-link>
-                        <!--  <input type="button" v-on:click ="envoieInput" class="btn btn-primary" value="Se connecter"/>
-                          {{messageSymfony}}-->
+                        <!--  <input type="button" v-on:click ="envoieInput" class="btn btn-primary" value="Se connecter"/>-->
+                        {{messageSymfony}}
+
                     </b-container>
                 </form>
             </b-col>
@@ -61,7 +62,6 @@
         name: 'Inscription',
         components: {Header,
             Gauche
-
         },
         props: {
         },
@@ -71,22 +71,17 @@
                 var prenom1= this.prenom;
                 var email1= this.email;
                 var password1= this.password;
-                var userJson = JSON.stringify({lastname:nom1,firstname:prenom1,email:email1,password:password1})
-                //   this.messageSymfony = (userJson);
-                //this.$http.get('http://127.0.0.1:8001/essai')
-                 this.$http.post('http://127.0.0.1:8001/user',userJson,{
-                headers: {
-                 'Content-Type': 'application/javascript'
-                  }
-                })
+                var userJson = JSON.stringify({lastname:nom1,firstname:prenom1,email:email1,password:password1});
+                this.messageSymfony = (userJson);
+                this.$http.post('http://127.0.0.1:8001/user',userJson)
                     .then(response => {
-                            if (response.status == 200) {
-                                this.$router.replace('/connexion');
+                            if (response.status === 200) {
+                                this.$router.replace('/home');
                             }
                         }
-                        // console.log(response)
+
                     )
-                return
+
             }
         },
         data() {

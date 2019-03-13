@@ -4,7 +4,7 @@
             <h4>Vos portails</h4>
         </b-row>
         <b-row class="btn_container">
-            <button class="home_button" type="button">Home</button>
+            <b-button @click="goHome" class="home_button" type="button">Home</b-button>
             <button class="social_network_button" type="button">Réseaux sociaux</button>
             <button class="e_commerce_button" type="button">E-Commerce</button>
             <button class="dashboard_button" type="button">Dashboard</button>
@@ -18,7 +18,13 @@
 
 <script>
     export default {
-        name: "NavBarBoot"
+        name: "NavBarBoot",
+        methods: {
+            goHome: function () {
+                this.$router.replace('/');
+
+            }
+        }
     }
     //var hauteur = window.innerHeight;
 </script>
