@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="appContent">
     <router-view></router-view>
     <!--<Connexion titre="Connexion"/>-->
     <!--<MenuNav titre="MenuNav"/>-->
