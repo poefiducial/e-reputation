@@ -16,7 +16,7 @@
     <schema id="4" parent="1" name="ereputation">
       <Current>1</Current>
       <Visible>1</Visible>
-      <Collation>utf8_general_ci</Collation>
+      <Collation>utf8_general_mysql500_ci</Collation>
     </schema>
     <schema id="5" parent="1" name="information_schema">
       <Collation>utf8_general_ci</Collation>
@@ -984,12 +984,24 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="249" parent="4" name="commandes"/>
-    <table id="250" parent="4" name="connectionecommerce"/>
-    <table id="251" parent="4" name="connectionsocialnetwork"/>
-    <table id="252" parent="4" name="e-commerces"/>
-    <table id="253" parent="4" name="socialnetworks"/>
-    <table id="254" parent="4" name="user"/>
+    <table id="249" parent="4" name="commandes">
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
+    <table id="250" parent="4" name="connectionecommerce">
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
+    <table id="251" parent="4" name="connectionsocialnetwork">
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
+    <table id="252" parent="4" name="ecommerces">
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
+    <table id="253" parent="4" name="socialnetworks">
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
+    <table id="254" parent="4" name="user">
+      <Collation>utf8mb4_unicode_ci</Collation>
+    </table>
     <column id="255" parent="249" name="idcommande">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
@@ -997,38 +1009,37 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="256" parent="249" name="commandeclient">
+    <column id="256" parent="249" name="ecommerces_idecommerce">
       <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="257" parent="249" name="commandeclient">
+      <Position>3</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="257" parent="249" name="commandedate">
-      <Position>3</Position>
+    <column id="258" parent="249" name="commandedate">
+      <Position>4</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="258" parent="249" name="commandeprix">
-      <Position>4</Position>
-      <DataType>varchar(45)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="259" parent="249" name="commandequantite">
+    <column id="259" parent="249" name="commandeprix">
       <Position>5</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="260" parent="249" name="e-commerces_ide-commerce">
+    <column id="260" parent="249" name="commandequantite">
       <Position>6</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="261" parent="249" name="fk_commandes_e-commerces1">
-      <ColNames>e-commerces_ide-commerce</ColNames>
+    <index id="261" parent="249" name="fk_commandes_ecommerces1">
+      <ColNames>ecommerces_idecommerce</ColNames>
       <Type>btree</Type>
     </index>
     <key id="262" parent="249" name="PRIMARY">
@@ -1036,12 +1047,11 @@
       <ColNames>idcommande</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="263" parent="249" name="fk_commandes_e-commerces1">
-      <ColNames>e-commerces_ide-commerce</ColNames>
+    <foreign-key id="263" parent="249" name="FK_35D4282C54CD4CB7">
+      <ColNames>ecommerces_idecommerce</ColNames>
       <RefSchemaName>ereputation</RefSchemaName>
-      <RefTableName>e-commerces</RefTableName>
-      <RefColNames>ide-commerce</RefColNames>
-      <OnUpdate>cascade</OnUpdate>
+      <RefTableName>ecommerces</RefTableName>
+      <RefColNames>idecommerce</RefColNames>
     </foreign-key>
     <column id="264" parent="250" name="idconnection">
       <Position>1</Position>
@@ -1050,36 +1060,34 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="265" parent="250" name="connectionlogin">
+    <column id="265" parent="250" name="ecommerces_idecommerce">
       <Position>2</Position>
-      <DataType>varchar(45)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="266" parent="250" name="connectionpassword">
+    <column id="266" parent="250" name="user_iduser">
       <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="267" parent="250" name="connectionlogin">
+      <Position>4</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="267" parent="250" name="user_iduser">
-      <Position>4</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="268" parent="250" name="e-commerces_ide-commerce">
+    <column id="268" parent="250" name="connectionpassword">
       <Position>5</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="269" parent="250" name="fk_connectionecommerce_user1">
-      <ColNames>user_iduser</ColNames>
+    <index id="269" parent="250" name="fk_connectionecommerce_ecommerces1">
+      <ColNames>ecommerces_idecommerce</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="270" parent="250" name="fk_connectionecommerce_e-commerces1">
-      <ColNames>e-commerces_ide-commerce</ColNames>
+    <index id="270" parent="250" name="fk_connectionecommerce_user1">
+      <ColNames>user_iduser</ColNames>
       <Type>btree</Type>
     </index>
     <key id="271" parent="250" name="PRIMARY">
@@ -1087,21 +1095,17 @@
       <ColNames>idconnection</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="272" parent="250" name="fk_connectionecommerce_user1">
+    <foreign-key id="272" parent="250" name="FK_A2F6CC2154CD4CB7">
+      <ColNames>ecommerces_idecommerce</ColNames>
+      <RefSchemaName>ereputation</RefSchemaName>
+      <RefTableName>ecommerces</RefTableName>
+      <RefColNames>idecommerce</RefColNames>
+    </foreign-key>
+    <foreign-key id="273" parent="250" name="FK_A2F6CC213B0E3CD4">
       <ColNames>user_iduser</ColNames>
       <RefSchemaName>ereputation</RefSchemaName>
       <RefTableName>user</RefTableName>
       <RefColNames>iduser</RefColNames>
-      <OnUpdate>cascade</OnUpdate>
-      <OnDelete>cascade</OnDelete>
-    </foreign-key>
-    <foreign-key id="273" parent="250" name="fk_connectionecommerce_e-commerces1">
-      <ColNames>e-commerces_ide-commerce</ColNames>
-      <RefSchemaName>ereputation</RefSchemaName>
-      <RefTableName>e-commerces</RefTableName>
-      <RefColNames>ide-commerce</RefColNames>
-      <OnUpdate>cascade</OnUpdate>
-      <OnDelete>cascade</OnDelete>
     </foreign-key>
     <column id="274" parent="251" name="idconnection">
       <Position>1</Position>
@@ -1110,36 +1114,34 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="275" parent="251" name="connectionlogin">
+    <column id="275" parent="251" name="socialnetworks_idsocialnetwork">
       <Position>2</Position>
-      <DataType>varchar(45)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="276" parent="251" name="connectionpassword">
+    <column id="276" parent="251" name="user_iduser">
       <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="277" parent="251" name="connectionlogin">
+      <Position>4</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="277" parent="251" name="user_iduser">
-      <Position>4</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="278" parent="251" name="socialnetworks_idsocialnetwork">
+    <column id="278" parent="251" name="connectionpassword">
       <Position>5</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="279" parent="251" name="fk_connection_user1">
-      <ColNames>user_iduser</ColNames>
+    <index id="279" parent="251" name="fk_connection_socialnetworks1">
+      <ColNames>socialnetworks_idsocialnetwork</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="280" parent="251" name="fk_connection_socialnetworks1">
-      <ColNames>socialnetworks_idsocialnetwork</ColNames>
+    <index id="280" parent="251" name="fk_connection_user1">
+      <ColNames>user_iduser</ColNames>
       <Type>btree</Type>
     </index>
     <key id="281" parent="251" name="PRIMARY">
@@ -1147,30 +1149,26 @@
       <ColNames>idconnection</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="282" parent="251" name="fk_connection_user1">
-      <ColNames>user_iduser</ColNames>
-      <RefSchemaName>ereputation</RefSchemaName>
-      <RefTableName>user</RefTableName>
-      <RefColNames>iduser</RefColNames>
-      <OnUpdate>cascade</OnUpdate>
-      <OnDelete>cascade</OnDelete>
-    </foreign-key>
-    <foreign-key id="283" parent="251" name="fk_connection_socialnetworks1">
+    <foreign-key id="282" parent="251" name="FK_698E0E916704F91B">
       <ColNames>socialnetworks_idsocialnetwork</ColNames>
       <RefSchemaName>ereputation</RefSchemaName>
       <RefTableName>socialnetworks</RefTableName>
       <RefColNames>idsocialnetwork</RefColNames>
-      <OnUpdate>cascade</OnUpdate>
-      <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="284" parent="252" name="ide-commerce">
+    <foreign-key id="283" parent="251" name="FK_698E0E913B0E3CD4">
+      <ColNames>user_iduser</ColNames>
+      <RefSchemaName>ereputation</RefSchemaName>
+      <RefTableName>user</RefTableName>
+      <RefColNames>iduser</RefColNames>
+    </foreign-key>
+    <column id="284" parent="252" name="idecommerce">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="285" parent="252" name="e-commercename">
+    <column id="285" parent="252" name="ecommercename">
       <Position>2</Position>
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
@@ -1178,7 +1176,7 @@
     </column>
     <key id="286" parent="252" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>ide-commerce</ColNames>
+      <ColNames>idecommerce</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="287" parent="253" name="idsocialnetwork">

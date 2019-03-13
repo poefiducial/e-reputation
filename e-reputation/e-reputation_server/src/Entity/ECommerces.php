@@ -15,7 +15,7 @@ class ECommerces
     /**
      * @var int
      *
-     * @ORM\Column(name="ide-commerce", type="integer", nullable=false)
+     * @ORM\Column(name="idecommerce", type="integer", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
@@ -24,7 +24,7 @@ class ECommerces
     /**
      * @var string
      *
-     * @ORM\Column(name="e-commercename", type="string", length=45, nullable=false)
+     * @ORM\Column(name="ecommercename", type="string", length=45, nullable=false)
      */
     private $eCommercename;
 

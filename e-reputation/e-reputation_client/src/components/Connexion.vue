@@ -10,23 +10,23 @@
             </b-col>
             <b-col>
                 <h2>Accedez à vos portails:</h2>
-                <form method="POST">
+                <form>
                     <div class="form-group row">
                         <label for="login" class="col-sm-2 col-form-label">Login</label>
                         <div class="col-sm-10">
-                            <input type="text" v-bind="email" class="form-control-plaintext" id="login" placeholder="Login">
+                            <input type="text" v-model="email" class="form-control-plaintext" id="login" placeholder="Login">
                         </div>
                     </div>
 
                     <div class="form-group row">
                         <label for="motDePasse" class="col-sm-2 col-form-label">Mot de passe</label>
                         <div class="col-sm-10">
-                            <input type="password" v-bind="password" class="form-control-plaintext" id="motDePasse" placeholder="********">
+                            <input type="password" v-model="password" class="form-control-plaintext" id="motDePasse" placeholder="********">
                         </div>
                     </div>
 
-                    <button @click="verifMotDePasse" class="btn btn-primary">Connexion</button>
-
+                    <b-button @click="verifMotDePasse" >Connexion</b-button><br>
+                    {{messageSymfony}}
                 </form>
             </b-col>
         </b-row>
@@ -51,36 +51,32 @@
             return {
                 email: '',
                 password: '',
-                authorisation: false
+                authorisation: false,
+                messageSymfony:''
             }
         },
 
         methods: {
             //computed: {
-                verifMotDePasse: function () {
+            verifMotDePasse: function () {
 
-                    var email1 = this.email;
-                    var password1 = this.password;
-                    var userJson = JSON.stringify({email: email1, password: password1})
-                    //this.messageSymfony = (userJson);
-                    //this.$http.get('http://127.0.0.1:8001/essai')
-
-                    this.$http.post('http://127.0.0.1:8001/connexion', userJson, {
-                        headers: {
-                            'Content-Type': 'application/json'
-                        }
-                    }).then(response => {
-                        if(response.status==200){
-                           // this.$session.start()
-                           // this.$session.set('jwt', response.body.token)
-                            this.$router.replace('/home');
-                            }
-                    });
-                    return; //authorisation;
-                }
+                var email1 = this.email;
+                var password1 = this.password;
+                var userJson = JSON.stringify({email: email1, password: password1});
+                this.messageSymfony = (userJson);
+                this.$http.post('http://127.0.0.1:8001/connexion', userJson).then(response => {
+                    if (response.status === 200) {
+                        this.messageSymfony =response.body;
+                        this.$router.replace('/home');
+                    } else {
+                        this.messageSymfony =response.body;
+                    }
+                });
 
             }
+
         }
+    }
 
 </script>
 
