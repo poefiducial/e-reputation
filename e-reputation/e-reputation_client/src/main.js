@@ -23,20 +23,21 @@ const router = new VueRouter({
   routes: [
     {
       path: '/',
-      component:  Inscription
+      component:  Inscription,
     },
     {
       path:'/connexion',
       name : "connexion",
       component: Connexion
     },
-    {
-      path:'/home',
-      component: Home
-    },
+
     {
       path:'/twitter',
       component: Twitter
+    },
+    {
+      path:'/home/:i',
+      component: Home
     },
     {
       path:'/veoprint',
@@ -52,12 +53,13 @@ const router = new VueRouter({
 
 new Vue({
   data : {
-    messageSymfony:''
-  /*  nom:'',
-    prenom:'',
-    email:'',
-    password:''
- */ },
+    messageSymfony:'',
+    jetonSession:'authorized'
+    /* nom:'',
+      prenom:'',
+      email:'',
+      password:''
+   */ },
   router,
-  render: h => h(App),
+  render: h => h(App)
 }).$mount('#app')

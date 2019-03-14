@@ -26,9 +26,11 @@
 
   export default {
     name: 'app',
+
     data(){
 
       return{
+        i:'authorizedherogihzeroighorzihgzopierhgpioezhrogihzreoighreoiidifghoreihgliehrglierhlgiheglkhrelkghlekrhglkerglkrhldfnb'
         //    messageSymfony:"probleme : serveur symfony non joignable"
       }
     },
@@ -44,7 +46,12 @@
       Twitter,
       NavBarBoot
     },
+
     mounted() {
+      if(this.jetonSession===false){
+        this.$router.push('/');
+      }
+
       //  this.$http.get('http://127.0.0.1:8001/essai')
       //      .then((response)=>{
       //          this.messageSymfony=response.body;

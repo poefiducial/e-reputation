@@ -52,7 +52,8 @@
                 email: '',
                 password: '',
                 authorisation: false,
-                messageSymfony:''
+                messageSymfony:'',
+                i:''
             }
         },
 
@@ -67,7 +68,8 @@
                 this.$http.post('http://127.0.0.1:8001/connexion', userJson).then(response => {
                     if (response.status === 200) {
                         this.messageSymfony =response.body;
-                        this.$router.replace('/home');
+                        this.i = 'authorized';
+                        this.$router.replace('/home/authorized');
                     } else {
                         this.messageSymfony =response.body;
                     }

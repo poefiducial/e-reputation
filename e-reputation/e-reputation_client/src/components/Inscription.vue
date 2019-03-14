@@ -76,7 +76,8 @@
                 this.$http.post('http://127.0.0.1:8001/user',userJson)
                     .then(response => {
                             if (response.status === 200) {
-                                this.$router.replace('/home');
+                                this.i='authorized'
+                                this.$router.replace('/home/authorized');
                             }
                         }
 
@@ -93,8 +94,12 @@
                 password:'',
                 confirm:'',
                 messageSymfony:'',
+                jetonSession:false
                 //router
             }
+        },
+        mounted() {
+            (this.jetonSession ='')
         }
     }
 </script>
