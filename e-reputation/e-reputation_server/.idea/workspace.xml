@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5763605a-b121-41fe-8e86-8dea481d9c01" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../e-reputation_client/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../e-reputation_client/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../e-reputation_client/src/components/Connexion.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../e-reputation_client/src/components/Connexion.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../e-reputation_client/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../e-reputation_client/src/components/Home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../e-reputation_client/src/components/Inscription.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../e-reputation_client/src/components/Inscription.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../e-reputation_client/src/components/NavBarBoot.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../e-reputation_client/src/components/NavBarBoot.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b2592b7d-c84b-483c-aae1-e18d133accbe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b2592b7d-c84b-483c-aae1-e18d133accbe.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomepageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Commandes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Commandes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Connectionecommerce.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Connectionecommerce.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/ECommerces.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/ECommerces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ereputation.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/../../ereputation.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e-reputation_client/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../e-reputation_client/src/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/HomepageController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+            <state relative-caret-position="154">
+              <caret line="66" column="38" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
               <folding>
                 <element signature="e#6#95#0#PHP" expanded="true" />
                 <element signature="e#125#145#0#PHP" expanded="true" />
@@ -232,7 +226,7 @@
       <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="775" />
@@ -341,15 +335,15 @@
       <workItem from="1552298175107" duration="611000" />
       <workItem from="1552302166205" duration="4762000" />
       <workItem from="1552320720410" duration="10146000" />
-      <workItem from="1552464995802" duration="14624000" />
+      <workItem from="1552464995802" duration="15850000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59847000" />
+    <option name="totallyTimeSpent" value="61073000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25764525" />
@@ -519,8 +513,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/HomepageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+        <state relative-caret-position="154">
+          <caret line="66" column="38" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
           <folding>
             <element signature="e#6#95#0#PHP" expanded="true" />
             <element signature="e#125#145#0#PHP" expanded="true" />

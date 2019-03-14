@@ -83,10 +83,19 @@
 
     export default {
         name: "Home",
+        data() {
+            return{
+                i:''
+            }
+
+        },
         components: {
             NavBarBoot,
             Header,
             //SideBar
+        },
+        mounted() {
+            this.i='';
         }
     }
 </script>
