@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Commandes
  *
- * @ORM\Table(name="commandes", indexes={@ORM\Index(name="fk_commandes_e-commerces1", columns={"e-commerces_ide-commerce"})})
+ * @ORM\Table(name="commandes", indexes={@ORM\Index(name="fk_commandes_ecommerces1", columns={"ecommerces_idecommerce"})})
  * @ORM\Entity(repositoryClass="App\Repository\CommandesRepository")
  */
 class Commandes
@@ -54,7 +54,7 @@ class Commandes
      *
      * @ORM\ManyToOne(targetEntity="ECommerces")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="e-commerces_ide-commerce", referencedColumnName="ide-commerce")
+     *   @ORM\JoinColumn(name="ecommerces_idecommerce", referencedColumnName="idecommerce")
      * })
      */
     private $eCommerceseCommerce;

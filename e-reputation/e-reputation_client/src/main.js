@@ -27,6 +27,7 @@ const router = new VueRouter({
     },
     {
       path:'/connexion',
+      name : "connexion",
       component: Connexion
     },
     {

@@ -52,7 +52,7 @@ class User
     /**
      * @var string
      *
-     * @ORM\Column(name="userlogin", type="string", length=45, nullable=false)
+     * @ORM\Column(name="userlogin", type="string", length=255, nullable=false)
      */
     private $userlogin;
 
@@ -121,5 +121,7 @@ class User
         return $this;
     }
 
-
+    public function __toString() {
+        return ("{$this->userfirstname}"." "."{$this->userlastname}\n");
+    }
 }

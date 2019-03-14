@@ -12,7 +12,7 @@
                 <h2>Bienvenue "prénom nom"</h2>
                 <b-col>
                     <b-row>
-                        <img class="logo twitter" src="../assets/twitter.png"/>
+                        <img class="logo twitter" src="../assets/twitter.png" alt="logo twitter"/>
                         <h3>Réseaux sociaux</h3>
 
                         <router-link to="/twitter" class="">Accédez à votre compte</router-link>
@@ -45,7 +45,7 @@
                     </b-row>
                     <hr>
                     <b-row>
-                        <img class="logo veo" src="../assets/veoprint.jpg"/>
+                        <img class="logo veo" src="../assets/veoprint.jpg" alt="logo veoprint"/>
                         <h3>E-Commerces</h3>
                         <router-link to="/veoprint" class="">Accédez à votre compte</router-link>
                     </b-row>

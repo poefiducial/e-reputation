@@ -4,10 +4,12 @@
             <h4>Vos portails</h4>
         </b-row>
         <b-row class="btn_container">
+
             <button class="home_button" @click="goHome" type="button">Home</button>
             <button class="social_network_button" @click="goTwitter" type="button">Réseaux sociaux</button>
             <button class="e_commerce_button" @click="goVeoprint" type="button">E-Commerce</button>
             <button class="dashboard_button" @click="goDashboard" type="button">Dashboard</button>
+
             <button class="settings_button" type="button">Configurations</button>
             <button class="disconnect_button" @click="disconnect" type="button">Se déconnecter</button>
         </b-row>
@@ -36,6 +38,7 @@
             },
             disconnect: function(){
                 this.$router.replace('/logout');
+
             }
         }
     }

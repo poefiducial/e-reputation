@@ -10,13 +10,10 @@ namespace App\Controller;
 
 
 use App\Entity\User;
-use Psr\Container\ContainerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-
 
 
 class HomepageController extends AbstractController
@@ -34,8 +31,8 @@ class HomepageController extends AbstractController
     }
 
     /**
- * @Route("/user", methods={"POST"})
- */
+     * @Route("/user", methods={"POST"})
+     */
     public function createUser(Request $req) {
         $content = $req->getContent();
         $data = json_decode($content);
@@ -47,36 +44,47 @@ class HomepageController extends AbstractController
         $user->setUserlastname($data->lastname);
         $user->setUserfirstname($data->firstname);
         $user->setUseremail($data->email);
-        $user->setUserpassword($data->password);
+        $user->setUserlogin($data->email);
+        $passwordHashed = password_hash($data->password,PASSWORD_BCRYPT,['cost' => 13]);
+        $user->setUserpassword($passwordHashed);
 
-        $entityManager->persist($user);
-        $entityManager->flush();
+
         if ($user === null) {
             return new Response("null");
         } else {
-            return new JsonResponse(json_encode($user->getIduser()));
+            $entityManager->persist($user);
+            $entityManager->flush();
+            return new Response("Inscription reussie".(string)$user->getIduser());
         }
 
     }
 
     /**
+     *
      * @Route("/connexion", methods={ "POST" })
      */
-    public function connexion(Request $req) {
+    public function check(Request $req) {
         $content = $req->getContent();
         $data = json_decode($content);
+        $password=$data->password;
 
         $userRepository = $this->getDoctrine()->getRepository(user::class);
 
         $user = $userRepository->findOneBy([
-            "login" => $data->login,
-            "password" => $data->password
+            "useremail" => $data->email
         ]);
-
+        $userPasswordHashee=$user->getUserpassword();
+//        $resultat = $userPasswordHashee;
         if ($user === null) {
-            return new Response("null");
+            return new Response("vos identifiants sont incorrectes, veuillez reessayer 1");
         } else {
-            return new Response($user->getIduser());
+              if(password_verify($password,$userPasswordHashee)) {
+                return new Response("Connection authorisee ".(string)$user);
+            } else {
+                return new Response('vos identifiants sont incorrectes, veuillez reessayer 2');
+            }
         }
+
     }
+
 }
