@@ -6,8 +6,8 @@
         <b-row>
             <b-col>
                 <NavBarBoot></NavBarBoot>
-                <!--<SideBar></SideBar>-->
             </b-col>
+
             <b-col  cols="8">
                 <h2>Bienvenue "prénom nom"</h2>
                 <b-col>
