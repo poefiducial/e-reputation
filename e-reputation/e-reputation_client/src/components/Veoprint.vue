@@ -4,13 +4,11 @@
         <hr>
 
         <b-row>
-            <b-col id="nav_container">
-                <!--<MenuNav></MenuNav>-->
+            <b-col cols="3" id="nav_container2">
                 <NavBarBoot></NavBarBoot>
-<!--                <SideBar></SideBar>-->
             </b-col>
 
-            <b-col id="main_page">
+            <b-col cols="9" id="main_page">
                 <div id="main_container">
                     <div class="logo_container">
                         <img class="veoprint_logo" src="../assets/veoprint_reduced.png">
@@ -27,6 +25,7 @@
                         </div>
                     </div>
                 </div>
+
             </b-col>
         </b-row>
     </div>
@@ -42,8 +41,8 @@
         components: {
             NavBarBoot,
             Header,
-           // SideBar
-           //MenuNav
+            // SideBar
+            //MenuNav
         }
     }
 </script>
@@ -55,9 +54,10 @@
         justify-content: center;
     }
 
-    #nav_container{
-        max-width: 16%;
+    #nav_container2{
+        max-width: 100%;
     }
+
     #main_container{
         max-height: 100%;
         height: 100%;

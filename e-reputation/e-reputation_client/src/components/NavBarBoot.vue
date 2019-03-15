@@ -66,7 +66,7 @@
         border-width: 1px;
         background: linear-gradient(#E1DEDE, #6B6B6B);
         height: 100vh;
-        width: 20%;
+        width: 100%;
     }
     .head_container, .btn_container, .logo_container{
         display: flex;
